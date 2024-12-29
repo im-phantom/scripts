@@ -30,8 +30,10 @@ elif opt.upper()=="D":
   
   for word in list:
     if len(word)<3:
-      word=word[1]+word[0]
-
+        try:
+            word=word[1]+word[0]
+        except:
+            word=word[0]
     elif len(word)>3:
       try:    
         word=word[3:-3]

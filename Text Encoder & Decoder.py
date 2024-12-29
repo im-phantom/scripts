@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import random
 string=input("Enter a string: ")
 opt=input("Encode or Decode ?\n(E or D)\n==> ")
@@ -6,7 +8,7 @@ list=string.split()
 #Encoder
 if opt.upper()=="E":
   for word in list:
-    char='abcdefghijklmnopqrstuvwxyz'
+    char='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
     rand1=random.choices(char,k=3)
     rand2=random.choices(char,k=3)
     randx=''
